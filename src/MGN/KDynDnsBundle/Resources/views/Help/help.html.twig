@@ -1,0 +1,29 @@
+{% extends 'MGNKDynDnsBundle::layout.html.twig' %}
+
+{% block data %}
+<h2> Comment utiliser KdynDNS </h2>
+
+<h3> Qu'es ce que KdynDNS ? </h3>
+<p>KDynDns est un service "cloud" permettant d'enregistrer votre l'ip publique que votre ordinateur utilise sur internet sur un serveur DNS.</p>
+
+<p>Ce service est mis a disposition gratuitement dans la limite de 10 mises a jours par heure. Pour l'utiliser vous trouverez sur ce site un script &agrave; ins&ecute;rer dans le planificateur de tache. Pour plus d'informations vous pouvez consulter la section <a href="{{ path('mgn_kdyndns_Help', {'_format': 'html'}) }}">aide</a>.</p>
+
+<h3> S'enregistrer </h3>
+<p>Pour vous enregistrer choisissez simplement un nom d'hôte, un domaine, et votre adresse email sur la page <a href="{{ path('api_1_new_records', {'_format': 'html'}) }}">d'enregistrement</a>.</p>
+
+<p>Une fois cela fait vous recevrez un email avec deux parametres : fqdn et token qui seront a renseignez dans le scripts qui sera executé sur votre ordinateur.</p>
+
+<h3> Installation </h3>
+
+<h4> Sous linux </h4>
+
+<p>Pour utilisez KDynDns sous linux vous pouvez simplement telecharger le fichier suivant sur votre ordinateur : <a href="{{ asset('scripts/KDynDns.sh') }}">KDynDns.sh</a>
+
+<p>Ensuite &eacute;diter le script avec votre editeur de texte favori et changez les lignes 2 et 3 pour renseignez les variables TOKEN et FQDN comme sur la photo ci-dessous.</p>
+
+<h5> Sous windows </h5>
+<p>Pour utilisez KDynDns sous linux vous pouvez simplement telecharger le fichier suivant sur votre ordinateur : <a href="{{ asset('scripts/KDynDns.vbs' }}">KDynDns.vbs</a>
+
+<p>Ensuite &eacute;diter le script avec notepad et changez les lignes 2 et 3 pour renseignez les variables TOKEN et FQDN comme sur la photo ci-dessous.</p>
+
+{% endblock %}

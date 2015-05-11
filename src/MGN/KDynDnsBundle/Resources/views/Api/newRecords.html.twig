@@ -1,0 +1,13 @@
+{% extends 'MGNKDynDnsBundle::layout.html.twig' %}
+
+{% block data %}
+
+<h2> Enregistrement d'un nouveau Hôte </h2>
+{{ form_start(form, {'action': path('api_1_post_records', {'_format': 'html'}), 'method': 'POST'}) }}
+    {{ form_errors(form) }}
+
+    {{ form_label(form.name) }} {{ form_errors(form.name) }} : {{ form_widget(form.name) }} . {{ form_widget(form.zone) }} {{ form_errors(form.zone) }}
+    {{ form_row(form.email) }}
+    <input type="submit" />
+{{ form_end(form) }}
+{% endblock %}

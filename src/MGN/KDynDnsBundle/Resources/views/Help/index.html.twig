@@ -1,0 +1,10 @@
+{% extends 'MGNKDynDnsBundle::layout.html.twig' %}
+
+{% block data %}
+<h2> KdynDNS </h2>
+
+<p>KDynDns est un service "cloud" permettant d'enregistrer votre l'ip publique que votre ordinateur utilise sur internet sur un serveur DNS.</p>
+
+<p>Ce service est mis a disposition gratuitement dans la limite de 10 mises a jours par heure. Pour l'utiliser vous trouverez sur ce site un script &agrave; ins&ecute;rer dans le planificateur de tache. Pour plus d'informations vous pouvez consulter la section <a href="{{ path('mgn_kdyndns_Help', {'_format': 'html'}) }}">aide</a>.</p>
+
+{% endblock %}

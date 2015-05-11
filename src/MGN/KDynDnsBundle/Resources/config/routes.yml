@@ -1,0 +1,14 @@
+# /src/Acme/BlogBundle/Resources/config/routes.yml
+mgn_kdyndns_Api:
+    type: rest
+    prefix: /v1
+    resource: "MGN\KDynDnsBundle\Controller\ApiController"
+    name_prefix:  api_1_ # naming collision
+
+mgn_kdyndns_Home:
+    pattern:  /index
+    defaults: { _controller: MGNKDynDnsBundle:Help:index }
+
+mgn_kdyndns_Help:
+    pattern:  /help
+    defaults: { _controller: MGNKDynDnsBundle:Help:help }

@@ -1,0 +1,4 @@
+mgnk_dyn_dns:
+    type: rest
+    prefix: /api
+    resource: "@MGNKDynDnsBundle/Resources/config/routes.yml"

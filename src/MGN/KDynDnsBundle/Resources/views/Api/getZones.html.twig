@@ -1,0 +1,11 @@
+{% extends 'MGNKDynDnsBundle::layout.html.twig' %}
+
+{% block data %}
+<p>Voici la liste des domaines disponnibles: </p>
+  <ul>
+  {% for zone in zones %}
+  <li>{{ zone.fqdn }}</li>
+  {% endfor %}
+  </ul>
+
+{% endblock %}

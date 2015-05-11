@@ -1,0 +1,17 @@
+Bonjour,
+
+Merci d'utiliser notre service KDynDns de dns dynamique.
+
+Vous venez d'enregistrer un hote sur notre service : {{ records }}.
+
+Maintenant vous pouvez installer les scripts de mises à jour en suivant l'aide disponnible ici : {{ url('mgn_kdyndns_Help', {'_format': 'html'}) }} 
+
+Vous aurrez besoin de valoriser les variables suivantes dans les scripts :
+--------------------------------------
+fqdn={{ records }}
+token={{ records.token }}
+--------------------------------------
+
+
+Mathieu GOULIN alias Kapable100
+Gestionnaire du service KDynDNS

@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Kapable DynDNS Service</title>
+</head>
+
+<body>
+<h1>Kapable DynDNS Service</h1>
+<div id="menu">
+<a href="{{ path('mgn_kdyndns_Home', {'_format': 'html'}) }}">Accueil</a> | <a href="{{ path('api_1_new_records', {'_format': 'html'}) }}">Enregistrer un hôte</a> | Etat d'un hôte | <a href="{{ path('mgn_kdyndns_Help', {'_format': 'html'}) }}">Aide </a>
+</div>
+{% block data %}
+{% endblock %}
+</body>
+</html>
